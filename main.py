@@ -99,7 +99,7 @@ def run():
             st.table(ticker.dividends)
             st.write(px.bar(Dividends, title=f'الرسم البياني للـتوزيعات النقدية لـ: {drop}'))
         elif drop == 'المؤشر العام' :
-            st.success("اختر الشركة من القائمة الاسهم")
+            st.info("اختر الشركة من القائمة الاسهم")
 
     if app== 'معلومات الشركة' :
 
@@ -108,7 +108,7 @@ def run():
         if drop != 'المؤشر العام' :
             st.write(ticker.info)
         elif drop == 'المؤشر العام' :
-            st.success("اختر الشركة من القائمة الاسهم")
+            st.info("اختر الشركة من القائمة الاسهم")
 run()
 
 #App deployed with streamlit you can run link:
