@@ -71,9 +71,9 @@ if len(drop) >0:
     R = round(R, 2)
     col1, col2 = st.columns(2)
     with col1: 
-        st.success(f'{R}')
+        st.info(f'{R}')
     with col2: 
-        st.success(f'آخر سعر اغلاق لـ {drop}')
+        st.info(f'آخر سعر اغلاق لـ {drop}')
     #======  PLOTING THE CHART ==================
     plot_chart = y.drop(['Adj Close', 'Volume'], axis=1)
     st.subheader(f'  الرسم البياني لــ: {drop}' )
