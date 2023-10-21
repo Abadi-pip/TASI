@@ -77,7 +77,7 @@ if len(drop) >0:
     #======  PLOTING THE CHART ==================
     plot_chart = y.drop(['Adj Close', 'Volume'], axis=1)
     st.subheader(f'  الرسم البياني لــ: {drop}' )
-    st.write(px.line(plot_chart,width=350)) #===== PLOTING THE CHART ===========
+    st.write(px.line(plot_chart,width=350)) #===== PLOTING THE CHART =========== WIDTH RECONFIGURED TO SUITS MOBILE AAPS
     
 def run():
     app = option_menu(
@@ -110,6 +110,9 @@ def run():
         elif drop == 'المؤشر العام' :
             st.success("اختر الشركة من القائمة الاسهم")
 run()
+
+#App deployed with streamlit you can run link:
+# https://abadi-pip-tasi-main-xq5hyj.streamlit.app/
 
 # [theme]
 # base="dark"
