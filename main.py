@@ -77,7 +77,7 @@ if len(drop) >0:
     #======  PLOTING THE CHART ==================
     plot_chart = y.drop(['Adj Close', 'Volume'], axis=1)
     st.subheader(f'  الرسم البياني لــ: {drop}' )
-    st.write(px.line(plot_chart,width=650)) #===== PLOTING THE CHART ===========
+    st.write(px.line(plot_chart,width=450)) #===== PLOTING THE CHART ===========
     
 def run():
     app = option_menu(
