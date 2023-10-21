@@ -97,7 +97,7 @@ def run():
             ticker = yf.Ticker(my_stock[f'{drop}'])
             Dividends = ticker.dividends 
             st.table(ticker.dividends)
-            st.write(px.bar(Dividends, width=50 ,title=f'الرسم البياني للـتوزيعات النقدية لـ: {drop}'))
+            st.write(px.bar(Dividends, width=350 ,title=f'الرسم البياني للـتوزيعات النقدية لـ: {drop}'))
         elif drop == 'المؤشر العام' :
             st.info("اختر الشركة من القائمة الاسهم")
 
