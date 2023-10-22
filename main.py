@@ -77,7 +77,7 @@ if len(drop) >0:
     #======  PLOTING THE CHART ==================
     plot_chart = y.drop(['Adj Close', 'Volume'], axis=1)
     st.subheader(f'  الرسم البياني لــ: {drop}' )
-    st.write(px.line(plot_chart,width=350)) #===== PLOTING THE CHART =========== WIDTH RECONFIGURED TO SUITS MOBILE AAPS
+    st.write(px.line(plot_chart)) #===== PLOTING THE CHART =========== WIDTH RECONFIGURED TO SUITS MOBILE AAPS
     
 def run():
     app = option_menu(
@@ -97,7 +97,7 @@ def run():
             ticker = yf.Ticker(my_stock[f'{drop}'])
             Dividends = ticker.dividends 
             st.table(ticker.dividends)
-            st.write(px.bar(Dividends, width=350 ,title=f'الرسم البياني للـتوزيعات النقدية لـ: {drop}'))
+            st.write(px.bar(Dividends, title=f'الرسم البياني للـتوزيعات النقدية لـ: {drop}'))
         elif drop == 'المؤشر العام' :
             st.info("اختر الشركة من القائمة الاسهم")
 
