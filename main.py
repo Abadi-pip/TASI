@@ -23,6 +23,22 @@ date = dt.datetime.now().strftime('TODAY\'S DATE : [%d-%m-%y]   TIME :[ %H:%M]')
 st.write(date)
 
 "---"
+#======= STYLING WEB PAGE ===========
+style = """
+<style>
+[class="main css-uf99v8 ea3mdgi5"]{
+background-image: url(https://images.unsplash.com/photo-1640340434855-6084b1f4901c?auto=format&fit=crop&q=80&w=1364&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+}
+[class="css-1avcm0n ezrtsby2"]{
+background: rgb(126 149 183 / 0%);
+
+}
+</style>
+
+"""
+
+st.markdown(style, unsafe_allow_html=True)
 #========================= DICTIONARY OF STOCK & TICKERS ================================
 stock_names = {
             
