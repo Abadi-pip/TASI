@@ -18,11 +18,6 @@ initial_sidebar_state= "auto"
 st.set_page_config(layout = layout ,initial_sidebar_state = initial_sidebar_state, page_title = page_title ,  page_icon= Page_icon)
 st.image("logo.png")
 st.title(page_title+" "+Page_icon)
-#======= DATE & TIME HEADER =========
-date = dt.datetime.now().strftime('TODAY\'S DATE : [%d-%m-%y]   TIME :[ %H:%M]')
-st.write(date)
-
-"---"
 #======= STYLING WEB PAGE ===========
 style = """
 <style>
@@ -39,6 +34,11 @@ background: rgb(126 149 183 / 0%);
 """
 
 st.markdown(style, unsafe_allow_html=True)
+#======= DATE & TIME HEADER =========
+date = dt.datetime.now().strftime('TODAY\'S DATE : [%d-%m-%y]   TIME :[ %H:%M]')
+st.write(date)
+
+"---"
 #========================= DICTIONARY OF STOCK & TICKERS ================================
 stock_names = {
             
